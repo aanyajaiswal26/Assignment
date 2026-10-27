@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <title>CSS Selectors</title>
+    <style>
+    /* 1. Universal Selector */
+    * {
+        font-family: Arial;
+    }
+
+    /* 2. Element Selector */
+    h1 {
+        color: blue;
+        text-align: center;
+    }
+
+    /* 3. Class Selector */
+    .card {
+        background-color: lightyellow;
+        padding: 15px;
+    }
+
+    /* 4. ID Selector */
+    #hero {
+        color: red;
+        font-size: 24px;
+    }
+    </style>
 </head>
+
 <body>
-    <title>My First CSS</title><style>
+    <h1>My Website</h1>
+
+ <div class="card">
+    <p>This is a card using the class selector.</p>
+ </div>
+
+ <h2 id="hero">Welcome to My Website!</h2>
+    <title>My First CSS</title>
+    <style>
     h1 {
         color: blue;
         text-align: center;
@@ -20,13 +55,14 @@
     body {
         background-color: lightyellow;
     }
-</style>
+    </style>
 
-</head>
-<body><h1>Welcome to My Website</h1>
-<p>This is my first CSS program.</p>
-
-</body>
-</html>
+   <h1>Welcome to My Website</h1>
+  <p>This is my first CSS program.</p>
+  <div class="card">
+    <p>This is a card using the class selector.</p>
+    </div>
+    <h2 id="hero">Welcome to My Website!</h2>
+    
 </body>
 </html>
