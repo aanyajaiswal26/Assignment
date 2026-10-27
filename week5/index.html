@@ -34,7 +34,7 @@
     <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-<style>
+ <style>
     body {
         font-family: 'Poppins', sans-serif;
         background-color: lightyellow;
@@ -60,7 +60,40 @@
         line-height: 1.6;
         padding: 15px;
     }
-</style>
+ </style>
+ <title> CSS Root Variable</title>
+
+ <style>
+    /* Define variables */
+    :root {
+        --main-color: blue;
+        --bg-color: lightyellow;
+        --text-color: darkgreen;
+        --space: 20px;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: var(--main-color);
+        margin-bottom: var(--space);
+    }
+
+    p {
+        color: var(--text-color);
+        padding: var(--space);
+    }
+
+    .card {
+        background-color: white;
+        padding: var(--space);
+        margin: var(--space);
+    }
+ </style>
+
 </head>
 
 <body>
@@ -96,15 +129,21 @@
     <h2 id="hero">Welcome to My Website!</h2>
     <h1>Welcome to My Website</h1>
 
-<p>
+ <p>
     CSS helps us style our web pages with different fonts,
     colours, and text sizes.
-</p>
+ </p>
 
-<div class="card">
+ <div class="card">
     This is a card with a different background colour
     and text style.
-</div>
+ </div>
 
+ <h1>Welcome to My Website</h1>
+ <p>This is an example of CSS root variables.</p>
+
+ <div class="card">
+    CSS variables make styling easy!
+ </div>
 </body>
 </html>
