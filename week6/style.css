@@ -1,0 +1,23 @@
+.card {
+    width: 430px;
+    padding: 25px;
+    margin: 40px auto;
+    border: 2px solid blue;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #0878d1;
+    color: white;
+    border-radius: 50%;
+    margin: 10px auto 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+}
