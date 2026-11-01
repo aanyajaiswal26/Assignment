@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+      gap: 20px;
+    }
+
+    .head { grid-area: head; }
+    .side { grid-area: side; }
+    .main { grid-area: main; }
+    .foot { grid-area: foot; }
+
+    .grid-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+      text-align: left;
+      background: lightblue;
+    }
+
+    .icon {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <header class="grid-item head"><span class="icon">🏠</span><span>Head</span></header>
+    <aside class="grid-item side"><span class="icon">📋</span><span>Side</span></aside>
+    <main class="grid-item main"><span class="icon">📰</span><span>Main</span></main>
+    <footer class="grid-item foot"><span class="icon">📞</span><span>Foot</span></footer>
+  </div>
+</body>
+</html>
